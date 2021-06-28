@@ -1,1 +1,1 @@
-# 2021_Summer_Intership
+# 2021_Summer_Internship
