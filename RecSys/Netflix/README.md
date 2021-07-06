@@ -33,14 +33,14 @@
 - 두 가지 주요 분야
   #### 1. neighborhood methods
 : item이나 user 간의 관계를 통해서 neighborhood 기준으로 선호도 추정
-<img src = "https://user-images.githubusercontent.com/28617444/124582407-f01aad80-de8c-11eb-9802-ef096924e9a9.png" width="70%">
+<img src = "https://user-images.githubusercontent.com/28617444/124582407-f01aad80-de8c-11eb-9802-ef096924e9a9.png" width="50%">
 
     - item-oriented approach
     - user-oriented approach
 
   #### 2. **latent factor models**
 : rating patterns로 추론된 20~100개의 factor로 item과 user를 나타내는 것
-  <img src = "https://user-images.githubusercontent.com/28617444/124582372-ebee9000-de8c-11eb-92a2-aa7383d193c6.png" width="70%">
+  <img src = "https://user-images.githubusercontent.com/28617444/124582372-ebee9000-de8c-11eb-92a2-aa7383d193c6.png" width="50%">
 
 
 ## Matrix Factorization Methods
