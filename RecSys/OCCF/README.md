@@ -257,19 +257,24 @@
 #### raw observation ($r_{ui}$) ⇒ distinct preference-confidence pairs($p_{ui}, c_{ui}$)
 
 1. regularized version of the dense SVD algorithm
+
 ![Untitled 14](https://user-images.githubusercontent.com/28617444/125593168-d2c2e137-d2ac-4ba4-8dfb-ccbabebe6197.png)
+
         - 규제 값 람다 가 없으면, 매우 poor 성능
         - 람다값 500 이 best recommendation
         - 그러나, neighborhood model 보다 poor 한 수준
         - 50 factor : rank_bar = 13.63% , 100 factor : rank_bar = 13.4%
 
 2. factorize the derived binary preference values
+
 ![Untitled 15](https://user-images.githubusercontent.com/28617444/125593169-63f99dfb-48ae-4207-af2c-8eb035515361.png)
+
         - 람다 = 150
         - neighborhood model보다 약간 좋은 모델
         - 50 factor : rank_Bark = 10.72%, 100 factor : rank_bar = 10.49%
 
 3. Our full model (confidence, preference)
+
 ![Untitled 16](https://user-images.githubusercontent.com/28617444/125593172-b260a7dd-5791-4597-adee-b171238e9933.png)
 
         - 50 ~ 100 factor : rank_bar = 8.93% ~ 8.56%
