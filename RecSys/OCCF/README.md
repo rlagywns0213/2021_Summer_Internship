@@ -95,13 +95,12 @@
     - 유사한 item에 같은 사람의 rating을 통해 unknown rating을 추정하는게 상식적으로 더 의미 있을 것
     - 예측에 대한 원인을 설명 가능하다!
     - 가장 중요한 접근법은 **아이템 간의 유사도 측정, $s_{ij}$ (피어슨상관계수, 코사인 유사도 등등)**<br>
-    <img src = "https://user-images.githubusercontent.com/28617444/125593156-538dfacd-0663-4812-91f6-df0d99646588.png" width="50%">
-
-        - 이 방식은 explicit feedback에 실용적임
-            - user , item에 따른 bias 추가 등
-        - **그러나, implicit feedback datasets에 적용하기 매우 힘듬**
-            - item의 빈도 : user마다 다 다른 scale ⇒ 유사도 구할 수 없음
-            - user preference와 confidence를 구별하기가 쉽지 않기에
+    <img src = "https://user-images.githubusercontent.com/28617444/125593156-538dfacd-0663-4812-91f6-df0d99646588.png" width="30%">
+    - 이 방식은 explicit feedback에 실용적임
+        - user , item에 따른 bias 추가 등
+    - **그러나, implicit feedback datasets에 적용하기 매우 힘듬**
+        - item의 빈도 : user마다 다 다른 scale ⇒ 유사도 구할 수 없음
+        - user preference와 confidence를 구별하기가 쉽지 않기에
 
 ### 3.2 Latent factor models
 
@@ -255,25 +254,25 @@
     ![Untitled 13](https://user-images.githubusercontent.com/28617444/125593167-6d545437-0014-4728-bf73-afcd2dbc6da7.png)
 
 
-  #### raw observation ($r_{ui}$) ⇒ distinct preference-confidence pairs($p_{ui}, c_{ui}$)
+#### raw observation ($r_{ui}$) ⇒ distinct preference-confidence pairs($p_{ui}, c_{ui}$)
 
-  1. regularized version of the dense SVD algorithm
-  ![Untitled 14](https://user-images.githubusercontent.com/28617444/125593168-d2c2e137-d2ac-4ba4-8dfb-ccbabebe6197.png)
-          - 규제 값 람다 가 없으면, 매우 poor 성능
-          - 람다값 500 이 best recommendation
-          - 그러나, neighborhood model 보다 poor 한 수준
-          - 50 factor : rank_bar = 13.63% , 100 factor : rank_bar = 13.4%
-  2. factorize the derived binary preference values
+1. regularized version of the dense SVD algorithm
+![Untitled 14](https://user-images.githubusercontent.com/28617444/125593168-d2c2e137-d2ac-4ba4-8dfb-ccbabebe6197.png)
+        - 규제 값 람다 가 없으면, 매우 poor 성능
+        - 람다값 500 이 best recommendation
+        - 그러나, neighborhood model 보다 poor 한 수준
+        - 50 factor : rank_bar = 13.63% , 100 factor : rank_bar = 13.4%
 
-  ![Untitled 15](https://user-images.githubusercontent.com/28617444/125593169-63f99dfb-48ae-4207-af2c-8eb035515361.png)
-          - 람다 = 150
-          - neighborhood model보다 약간 좋은 모델
-          - 50 factor : rank_Bark = 10.72%, 100 factor : rank_bar = 10.49%
-  3. Our full model (confidence, preference)
+2. factorize the derived binary preference values
+![Untitled 15](https://user-images.githubusercontent.com/28617444/125593169-63f99dfb-48ae-4207-af2c-8eb035515361.png)
+        - 람다 = 150
+        - neighborhood model보다 약간 좋은 모델
+        - 50 factor : rank_Bark = 10.72%, 100 factor : rank_bar = 10.49%
 
-  ![Untitled 16](https://user-images.githubusercontent.com/28617444/125593172-b260a7dd-5791-4597-adee-b171238e9933.png)
+3. Our full model (confidence, preference)
+![Untitled 16](https://user-images.githubusercontent.com/28617444/125593172-b260a7dd-5791-4597-adee-b171238e9933.png)
 
-          - 50 ~ 100 factor : rank_bar = 8.93% ~ 8.56%
+        - 50 ~ 100 factor : rank_bar = 8.93% ~ 8.56%
 
 #### 2) Probability
 
@@ -287,7 +286,7 @@
     - 점선 그래프: 해당 유저가 이전에 시청했던 프로그램을 삭제하지 않은 것인데, 다른 모델보다 선택할 확률이 매우 높았다.
         - 하지만 이는 이전에 봤던 데이터를 주는것이므로 실제 추천 시, 유용하지 않을 것
 
-#@## 3) Performance
+#### 3) Performance
 
 - 15개의 bin으로 나누어서 "popularity" , "watching time"에 따른 측정한 rank 값이 얼마나 감소하는지를 평가
 
