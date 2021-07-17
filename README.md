@@ -17,8 +17,9 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 | 07/12| |PMF
 | 07/19| |[OCCF](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/OCCF)
 
-## Except
+## More Implementation
 
 | Date | About|
 |  :---:|  :---: |
-| 07/19 |[ALS](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)|
+| 07/11 | [SVD_basic](https://github.com/rlagywns0213/2021_Summer_Internship/blob/main/RecSys/SVD_basic.ipynb)
+| 07/17 |[ALS](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)|
