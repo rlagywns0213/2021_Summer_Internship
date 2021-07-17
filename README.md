@@ -6,7 +6,7 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 
 ## Compare Learning Algorithm on Explicit Datasets
 
-**In experiment, You can see the trade-off relationship between the loss and the number of factors.**
+**In experiment, You can see the trade-off relationship between the loss and the number of factors in ALS Algorithm.**
 
 **Also, You can see that SGD outperforms ALS in terms of loss as the number of factors increases.**
   1. [SGD on SVD model](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/SGD)
