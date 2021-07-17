@@ -4,9 +4,9 @@
 
 ## Compare With ALS
 
-- In experiment, I use ```np.random.seed(0)``` for understanding Learning Algorithms 
+- In experiment, I use ```np.random.seed(0)``` for understanding Learning Algorithms
     - [Go To ALS](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)
-    
+
 ## Usage
 
 ```bash
@@ -14,9 +14,9 @@ python train.py
 ```
 
 > initial configuration  
-epochs: 100
-factor: 2
-lambda_param: 0.01
+epochs: 100<br>
+factor: 2<br>
+lambda_param: 0.01<br>
 learning_rate: 0.05
 
 
@@ -93,4 +93,4 @@ Iteration: 71, loss = 0.244322, time : 107.2103
 Iteration: 81, loss = 0.228086, time : 122.1926
 Iteration: 91, loss = 0.214762, time : 137.7542
 ```
-- **factor 수가 늘어나면서, time과 loss의 trade off 관계를 확인할 수 있음**
+- **ALS와는 달리, factor 수가 늘어나도 시간적 비용이 비슷하였음(확인 필요)**
