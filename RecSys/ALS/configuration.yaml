@@ -1,0 +1,3 @@
+epochs: 100
+factor: 2
+lambda_param: 0.01
