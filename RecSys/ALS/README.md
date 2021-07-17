@@ -1,8 +1,12 @@
-# Alternating Least Squares (ALS)
+# Alternating Least Squares (ALS) on SVD Model
 
 ![image](https://user-images.githubusercontent.com/28617444/126021210-ef650205-24fc-4491-911b-978ac6ee34fb.png)
 
-
+## Compare With SGD
+    
+- In experiment, I use ```np.random.seed(0)``` for understanding Learning Algorithms 
+    - [Go To SGD](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)
+    
 ## Usage
 
 ```bash
@@ -26,33 +30,52 @@ python train.py --epochs 100 --factor 5 --lambda_param 0.01
 
 ```bash
 $ python train.py   
-기존 loss: 2.848284424351714
-Iteration: 1, loss = 0.673627, time : 0.1795
-Iteration: 11, loss = 0.520789, time : 1.3850
-Iteration: 21, loss = 0.520620, time : 2.5522
-Iteration: 31, loss = 0.520617, time : 3.7277
-Iteration: 41, loss = 0.520615, time : 5.0121
-Iteration: 51, loss = 0.520614, time : 6.1835
-Iteration: 61, loss = 0.520613, time : 7.3545
-Iteration: 71, loss = 0.520612, time : 8.5221
-Iteration: 81, loss = 0.520611, time : 9.6823
-Iteration: 91, loss = 0.520611, time : 10.8405
+
+기존 loss: 2.6594469696143266
+Iteration: 1, loss = 0.605044, time : 0.9794
+Iteration: 11, loss = 0.520694, time : 3.9203
+Iteration: 21, loss = 0.520619, time : 6.7991
+Iteration: 31, loss = 0.520616, time : 8.6362
+Iteration: 41, loss = 0.520614, time : 10.5217
+Iteration: 51, loss = 0.520613, time : 12.4505
+Iteration: 61, loss = 0.520612, time : 14.3744
+Iteration: 71, loss = 0.520612, time : 16.1706
+Iteration: 81, loss = 0.520611, time : 17.9828
+Iteration: 91, loss = 0.520611, time : 21.8057
 ```
 
 2. factor : 15
 ```bash
-$ python train.py
-기존 loss: 15.61308535071082
-Iteration: 1, loss = 0.522849, time : 0.3308
-Iteration: 11, loss = 0.410287, time : 2.9945
-Iteration: 21, loss = 0.409881, time : 5.6949
-Iteration: 31, loss = 0.409789, time : 8.3139
-Iteration: 41, loss = 0.409761, time : 10.9561
-Iteration: 51, loss = 0.409750, time : 13.6452
-Iteration: 61, loss = 0.409745, time : 16.2007
-Iteration: 71, loss = 0.409743, time : 18.7975
-Iteration: 81, loss = 0.409741, time : 21.4234
-Iteration: 91, loss = 0.409741, time : 24.0526
+$ python train.py --factor 15
+
+기존 loss: 15.497373776988232
+Iteration: 1, loss = 0.533825, time : 0.3760
+Iteration: 11, loss = 0.409911, time : 3.8134
+Iteration: 21, loss = 0.409838, time : 7.0643
+Iteration: 31, loss = 0.409810, time : 10.2219
+Iteration: 41, loss = 0.409786, time : 13.5610
+Iteration: 51, loss = 0.409768, time : 16.8124
+Iteration: 61, loss = 0.409756, time : 20.0622
+Iteration: 71, loss = 0.409749, time : 22.9266
+Iteration: 81, loss = 0.409745, time : 25.9660
+Iteration: 91, loss = 0.409743, time : 28.9546
+```
+
+3. factor : 100
+```bash
+$ python train.py --factor 100
+
+기존 loss: 99.7249859708129
+Iteration: 1, loss = 0.335995, time : 2.5956
+Iteration: 11, loss = 0.229574, time : 31.0992
+Iteration: 21, loss = 0.228984, time : 65.2534
+Iteration: 31, loss = 0.228855, time : 99.6673
+Iteration: 41, loss = 0.228801, time : 135.1778
+Iteration: 51, loss = 0.228773, time : 164.2999
+Iteration: 61, loss = 0.228756, time : 196.1487
+Iteration: 71, loss = 0.228746, time : 231.6902
+Iteration: 81, loss = 0.228740, time : 268.3997
+Iteration: 91, loss = 0.228736, time : 303.7614
 ```
 
 - **factor 수가 늘어나면서, time과 loss의 trade off 관계를 확인할 수 있음**
