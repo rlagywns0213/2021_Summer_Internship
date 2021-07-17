@@ -20,6 +20,7 @@ class als_basic():
 
     def fit(self):
         #init latent factors
+        np.random.seed(0)
         self._U = np.random.normal(size=(self._num_users, self._factor))
         self._V = np.random.normal(size=(self._num_items, self._factor))
         t = time.time()
