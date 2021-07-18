@@ -15,8 +15,8 @@ python train.py
 ```
 
 > initial configuration  
-epochs=100
-factor=2
+epochs=100<br>
+factor=2<br>
 lambda_param = 0.01
 
 
