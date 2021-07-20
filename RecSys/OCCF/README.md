@@ -4,7 +4,8 @@ For a summary of the paper, click [here](https://github.com/rlagywns0213/2021_Su
 
 ![image](https://user-images.githubusercontent.com/28617444/126036848-319deb23-c545-4a17-a2a2-d4ff8996ebf9.png)
 
-- The explicit datasets, movielens were used and implemented as implicit datasets.
+- The explicit datasets, movielens were used 
+- I implemented as implicit datasets. ( So test_rank score is not reliable )
 - Test_rank : sort by prediction of test set
 
 ## Usage
@@ -14,8 +15,8 @@ python train.py
 ```
 
 > initial configuration  
-epochs=100
-factor=2
+epochs=100<br>
+factor=2<br>
 lambda_param = 0.01
 
 
