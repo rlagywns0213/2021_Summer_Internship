@@ -9,9 +9,16 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 **In experiment, You can see the trade-off relationship between the loss and the number of factors in ALS Algorithm.**
 
 **Also, You can see that SGD outperforms ALS in terms of loss as the number of factors increases.**
-  1. [SGD on SVD model](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/SGD)
+  1. [Go to SGD code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/SGD)
 
-  2. [ALS on SVD model](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)|
+  2. [Go to ALS code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)
+
+
+## Compare adding bias on SVD model (Experiment in 50, 100, 200 factors)
+
+  **In experiment, You can see the the improvement of the test loss in SVD model by adding bias.**
+
+  - [Go to code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/Netflix)
 
 ## Seminar
 
