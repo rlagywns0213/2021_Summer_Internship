@@ -1,0 +1,4 @@
+num_walks: 10
+represent_size: 2
+walk_length: 40
+window_size: 5
