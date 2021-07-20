@@ -2,10 +2,12 @@
 
 ## Basic VS Adding Bias
 
-1) Basic (No adding bias)
+1.Basic (No adding bias)
+
 ![image](https://user-images.githubusercontent.com/28617444/126273649-2096f725-fa8e-4060-818d-e4742c7c9adc.png)
 
-2) Adding Bias
+2. Adding Bias
+
 ![image](https://user-images.githubusercontent.com/28617444/126274547-a31b3d30-77da-4751-afc0-a47ae6c15625.png)
 
 ```python
@@ -55,7 +57,7 @@ learning_rate: 0.05
 python train.py --bias
 ```
 
-## Results
+## Terminal_Results
 
 1. No adding bias
 
