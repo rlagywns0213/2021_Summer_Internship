@@ -23,14 +23,16 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 ## Seminar
 
 | Date | Paper | About |
-| :---: | --- |  :---: |
-| 07/05| |[GCN](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GCN)
-| 07/05| |GAT
-| 07/05| |Deepwalk
+| :---: | :------------: |  :---: |
+| 07/05| [Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/abs/1609.02907)|[GCN](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GCN)
+| 07/05|[Graph Attention Network](https://arxiv.org/abs/1710.10903) |GAT
+| 07/05| |[Deepwalk](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/RandomWalk/Deepwalk)
 | 07/12| |node2vec
-| 07/12| |[Netflix](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/Netflix)
+| 07/12| [Matrix Factorization Techniques for Recommender Systems](https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf)|[Netflix](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/Netflix)
 | 07/12| |PMF
-| 07/19| |[OCCF](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/OCCF)
+| 07/19| [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf)|[OCCF](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/OCCF)
+| 07/19|[BPR: Bayesian Personalized Ranking from Implicit Feedback](https://arxiv.org/ftp/arxiv/papers/1205/1205.2618.pdf)| BPR |
+| 07/19| [Factorization Machines](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)| FM |
 
 
 
