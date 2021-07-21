@@ -17,7 +17,7 @@
 ## Usage
 
 ```bash
-python train.py 
+python train.py
 ```
 
 > initial configuration  
@@ -37,10 +37,15 @@ python train.py --represent_size 4
 python train.py --represent_size 4
 Target Graph: karate
 Walking...
-modeling time: 0.0170 
+modeling time: 0.0170
 Traning...
-modeling time: 0.0409 
+modeling time: 0.0409
 Visualize Results...
 Graph image saved!
 ```
 
+## References
+
+[1] Perozzi, Bryan, Rami Al-Rfou, and Steven Skiena. "Deepwalk: Online learning of social representations." Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining. 2014.
+
+[2] https://github.com/phanein/deepwalk
