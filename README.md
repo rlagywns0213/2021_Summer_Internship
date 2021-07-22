@@ -32,7 +32,7 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 | 07/12| |PMF
 | 07/19| [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf)|[OCCF](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/OCCF)
 | 07/19|[BPR: Bayesian Personalized Ranking from Implicit Feedback](https://arxiv.org/ftp/arxiv/papers/1205/1205.2618.pdf)| BPR |
-| 07/19| [Factorization Machines](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)| FM |
+| 07/19| [Factorization Machines](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)| [FM](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/FM) |
 
 
 
