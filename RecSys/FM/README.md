@@ -30,9 +30,9 @@
 
 | k |  total loss | best_RMSE | 1 epoch Time |
 | :---: | :---: |  :---: | :---: |
-| 5  |  987.1157 |  0.3506 ||  9.2686 |
-| 15 |  865.5704 |  0.4488 ||  10.3403 |
-| 30 |  849.7148 |  0.3744 ||  10.5632 |
+| 5  |  987.1157 |  0.3506 |  9.2686 |
+| 15 |  865.5704 |  0.4488 |  10.3403 |
+| 30 |  849.7148 |  0.3744 |  10.5632 |
 
 ## Usage
 
@@ -70,7 +70,7 @@ Epoch 80 of 100, training Loss: 1027.6660, Test RMSE: 0.7603
 Epoch 90 of 100, training Loss: 1005.9219, Test RMSE: 0.7966
 ===> 1 epoch mean Time : 9.085
 Epoch 100 of 100, training Loss: 987.1157, Test RMSE: 0.9098
-===> 1 epoch mean Time : 9.100 
+===> 1 epoch mean Time : 9.100
 Best RMSE :0.35063427686691284,
 1 EPOCH MEAN TIME :9.26866399526596
 ```
@@ -101,7 +101,7 @@ Best RMSE :0.4488947093486786,
 1 EPOCH MEAN TIME :10.340331273078919
 ```
 
-3. k : 15
+3. k : 30
 ```bash
 $ python train.py --k 30
 Epoch 10 of 100, training Loss: 1246.1898, Test RMSE: 0.8885
@@ -132,4 +132,3 @@ Best RMSE :0.3744339942932129,
 [1] Rendle, Steffen. "Factorization machines." 2010 IEEE International conference on data mining. IEEE, 2010.
 
 [2] https://github.com/Namkyeong/RecSys_paper/tree/main/FactorizationMachine
-
