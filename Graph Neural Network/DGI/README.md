@@ -51,23 +51,6 @@ Total time elapsed: 207.5775s
 classification Start
 Accuracy: 0.8231801390647888
 ```
-2. Adding bias
-```bash
-$ python train.py --bias
-adding bias
-기존 loss: 0.781466335477013
-Iteration: 10, train_loss = 0.5777, test_loss = 1.7902, average time for 1 epoch : 1.4632
-Iteration: 20, train_loss = 0.5214, test_loss = 1.6160, average time for 1 epoch : 1.4680
-Iteration: 30, train_loss = 0.5083, test_loss = 1.5752, average time for 1 epoch : 1.5398
-Iteration: 40, train_loss = 0.5023, test_loss = 1.5566, average time for 1 epoch : 1.5191
-Iteration: 50, train_loss = 0.4987, test_loss = 1.5456, average time for 1 epoch : 1.5643
-Iteration: 60, train_loss = 0.4963, test_loss = 1.5382, average time for 1 epoch : 1.4794
-Iteration: 70, train_loss = 0.4946, test_loss = 1.5328, average time for 1 epoch : 1.5510
-Iteration: 80, train_loss = 0.4933, test_loss = 1.5288, average time for 1 epoch : 1.7602
-Iteration: 90, train_loss = 0.4923, test_loss = 1.5257, average time for 1 epoch : 1.6292
-Iteration: 100, train_loss = 0.4915, test_loss = 1.5231, average time for 1 epoch : 1.4900
-```
-
 
 ## References
 
