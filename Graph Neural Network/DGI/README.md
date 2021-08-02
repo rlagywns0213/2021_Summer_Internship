@@ -65,7 +65,7 @@ Accuracy: 0.8231801390647888
 
 - **My Visualization showed that DGI represents graph input well.**
 
-  1. PCA
+####  1. PCA
 
   - Epoch 0
   <center><img src="results/cora/representations_PCA_0 epoch.png" width="50%" height="50%"></center>
@@ -77,7 +77,8 @@ Accuracy: 0.8231801390647888
   - Epoch 100
 
   <center><img src="results/cora/representations_PCA_100 epoch.png" width="50%" height="50%"></center>
-  2. T-SNE
+
+####  2. T-SNE
 
   - Epoch 0
 
