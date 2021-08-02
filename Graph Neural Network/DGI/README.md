@@ -17,9 +17,10 @@ python train.py --dataset cora
 
 > initial configuration  
 epochs: 100<br>
-factor: 50<br>
-lambda_param: 0.01<br>
-learning_rate: 0.05
+learning_rate: 0.001<br>
+weight_decay: 5e-4<br>
+hidden: 512 # In paper
+
 
 
 ## Example  
