@@ -30,6 +30,17 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 | 07/11 | [SVD_basic.ipynb](https://github.com/rlagywns0213/2021_Summer_Internship/blob/main/RecSys/SVD_basic.ipynb)
 | 07/11 | [User-based CF.ipynb](https://github.com/rlagywns0213/2021_Summer_Internship/blob/main/RecSys/User-based%20CF.ipynb)
 
+---
+
+### Experiments 1 & 2 on Deep Graph InfoMax
+```
+  Experiments 1. Corrupt function
+  Experiments 2. Visualization by epoch (PCA, T-SNE)
+```
+- [Go to code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI)
+
+---
+
 ### Compare Learning Algorithm on Explicit Datasets
 
 **In experiment, You can see the trade-off relationship between the loss and the number of factors in ALS Algorithm.**
@@ -39,6 +50,7 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 
   2. [Go to ALS code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/RecSys/ALS)
 
+---
 
 ### Compare adding bias on SVD model (Experiment in 50, 100, 200 factors)
 
