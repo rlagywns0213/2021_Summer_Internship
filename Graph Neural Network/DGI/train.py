@@ -137,7 +137,7 @@ def visualize():
     plt.plot(loss_list, linewidth=2.0, color="red", label="BCEloss")
     plt.legend()
     plt.show()
-    plt.savefig(f"results/{dataset}/loss(normalization).png")
+    plt.savefig(f"results/{dataset}/{args.epochs} epoch loss(normalization).png")
   
 if __name__ =="__main__":
 
@@ -151,3 +151,6 @@ if __name__ =="__main__":
 
     classification_test()
     visualize()
+    embeds  = model.embed(features,adj)
+    DGI.visualize_feature1(embeds, labels, args.epochs)
+    DGI.visualize_feature2(embeds, labels, args.epochs)

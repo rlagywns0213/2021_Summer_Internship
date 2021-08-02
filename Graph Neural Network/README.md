@@ -1,6 +1,5 @@
 # Graph Neural Network
 
-
 ## Graph Neural Network based
 
 #### Supervised

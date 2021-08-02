@@ -1,5 +1,9 @@
 import torch.nn as nn
 from layers import Discriminator, Readout, GCN
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 class DGI(nn.Module):
@@ -26,4 +30,47 @@ class DGI(nn.Module):
         h = self.gcn(h, adj)
         s = self.readout(h)
         return h.detach()
+
+####################################PCA Representation########################################################
+    def visualize_feature1(embeds,labels,epoch):
+        x_coords = []
+        y_coords = []
+        colors = []
+        pca = PCA(n_components=2)
+        pca_result = pca.fit_transform(embeds[0])
+        for x,y in pca_result:
+                x_coords.append(x)
+                y_coords.append(y)
+            
+        color = ["darkviolet", "yellow", "aqua", "silver","springgreen","pink","darkred"]
+        labels_list = list(np.array(labels))
+        for i in labels_list:
+            colors.append(color[i])
+
+        plt.scatter(x_coords, y_coords, c=colors, s=5)
+        plt.title(f"Representations of Graph_epoch:{epoch}")
+        plt.savefig(f"results/cora/representations_PCA_{epoch} epoch.png")
+        print("PCA representation png saved!!")
+
+
+####################################T-SNE Representation#######################################################
+    def visualize_feature2(embeds,labels,epoch):
+        x_coords = []
+        y_coords = []
+        colors = []
+        tsne = TSNE(n_components=2)
+        tsne_x  = tsne.fit_transform(embeds[0])
+        for x,y in tsne_x :
+                x_coords.append(x)
+                y_coords.append(y)
+            
+        color = ["darkviolet", "yellow", "aqua", "silver","springgreen","pink","darkred"]
+        labels_list = list(np.array(labels))
+        for i in labels_list:
+            colors.append(color[i])
+
+        plt.scatter(x_coords, y_coords, c=colors, s=5)
+        plt.title(f"Representations of Graph_epoch:{epoch}")
+        plt.savefig(f"results/cora/representations_TSNE_{epoch} epoch.png")
+        print("TSNE representation png saved!!")
 
