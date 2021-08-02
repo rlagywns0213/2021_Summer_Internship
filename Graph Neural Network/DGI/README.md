@@ -67,32 +67,32 @@ Accuracy: 0.8231801390647888
 
 - Epoch 0
 
-![PCA_0](reuslts/cora/representations_PCA_0 epoch.png)
+![PCA_0](results/cora/representations_PCA_0 epoch.png)
 
 - Epoch 20
 
-![PCA_20](reuslts/cora/representations_PCA_20 epoch.png)
+![PCA_20](results/cora/representations_PCA_20 epoch.png)
 
 - Epoch 100
 
-![PCA_100](reuslts/cora/representations_PCA_100 epoch.png)
+![PCA_100](results/cora/representations_PCA_100 epoch.png)
 
 
 2. T-SNE
 
 - Epoch 0
 
-![T-SNE_0](reuslts/cora/representations_TSNE_0 epoch.png)
+![T-SNE_0](results/cora/representations_TSNE_0 epoch.png)
 
 
 - Epoch 20
 
-![T-SNE_20](reuslts/cora/representations_TSNE_20 epoch.png)
+![T-SNE_20](results/cora/representations_TSNE_20 epoch.png)
 
 
 - Epoch 100
 
-![T-SNE_100](reuslts/cora/representations_TSNE_100 epoch.png)
+![T-SNE_100](results/cora/representations_TSNE_100 epoch.png)
 
 
 ## References
