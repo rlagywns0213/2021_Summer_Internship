@@ -67,7 +67,7 @@ Accuracy: 0.8231801390647888
 
 - Epoch 0
 
-![PCA_0](results/cora/representations_PCA_0 epoch.png)
+![PCA_0](results/cora/representations_PCA_0\epoch.png)
 
 - Epoch 20
 
