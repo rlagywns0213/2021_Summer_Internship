@@ -63,37 +63,33 @@ Accuracy: 0.8231801390647888
 
 ## Experiments 2. Visualization by epoch (PCA, T-SNE)
 
-1. PCA
+- **My Visualization showed that DGI represents graph input well.**
 
-- Epoch 0
+  1. PCA
 
-![PCA_0](results/cora/representations_PCA_0\epoch.png)
+  - Epoch 0
+  <center><img src="results/cora/representations_PCA_0 epoch.png" width="50%" height="50%"></center>
 
-- Epoch 20
+  - Epoch 20
 
-![PCA_20](results/cora/representations_PCA_20 epoch.png)
+  <center><img src="results/cora/representations_PCA_20 epoch.png" width="50%" height="50%"></center>
 
-- Epoch 100
+  - Epoch 100
 
-![PCA_100](results/cora/representations_PCA_100 epoch.png)
+  <center><img src="results/cora/representations_PCA_100 epoch.png" width="50%" height="50%"></center>
+  2. T-SNE
 
+  - Epoch 0
 
-2. T-SNE
+  <center><img src="results/cora/representations_TSNE_0 epoch.png" width="50%" height="50%"></center>
 
-- Epoch 0
+  - Epoch 20
 
-![T-SNE_0](results/cora/representations_TSNE_0 epoch.png)
+  <center><img src="results/cora/representations_TSNE_20 epoch.png" width="50%" height="50%"></center>
 
+  - Epoch 100
 
-- Epoch 20
-
-![T-SNE_20](results/cora/representations_TSNE_20 epoch.png)
-
-
-- Epoch 100
-
-![T-SNE_100](results/cora/representations_TSNE_100 epoch.png)
-
+  <center><img src="results/cora/representations_TSNE_100 epoch.png" width="50%" height="50%"></center>
 
 ## References
 
