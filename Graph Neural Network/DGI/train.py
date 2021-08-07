@@ -35,7 +35,7 @@ parser.add_argument('--weight_decay', type=float, default=weight_decay,
                     help='Weight decay (L2 loss on parameters).')
 parser.add_argument('--hidden', type=int, default=hidden,
                     help='Number of hidden units.')
-parser.add_argument('--dataset', required = False, default='BlogCatalog',
+parser.add_argument('--dataset', required = False, default='cora',
                     help='dataset name')
 
 
