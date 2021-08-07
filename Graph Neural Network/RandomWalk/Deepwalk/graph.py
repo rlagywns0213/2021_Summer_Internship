@@ -128,7 +128,7 @@ class Graph(defaultdict):
             pca_result = pca.fit_transform(word_vectors)
             for x,y in pca_result:
                 x_coords.append(x)
-                y_coords.append(x)
+                y_coords.append(y)
             plt.scatter(x_coords, y_coords)
             for i,v in enumerate(edge_list):
                 plt.annotate(v,xy=(x_coords[i],y_coords[i]))
