@@ -1,11 +1,17 @@
 Graph Convolutional Networks in PyTorch
 ====
 
-PyTorch implementation of Graph Convolutional Networks (GCNs) for semi-supervised classification [1].
+# Experiment about Data Augmentation in GCN.
 
-For a high-level introduction to GCN see:
+- **I augment All of Graph Data!! (Didn't Consider Data Leakage Problem)**
 
-Thomas Kipf, [Graph Convolutional Networks](http://tkipf.github.io/graph-convolutional-networks/) (2016) <br>
+## Results
+
+![image](https://user-images.githubusercontent.com/28617444/128131054-e7b4b603-7976-4519-8a35-4a1f7b478e8a.png)
+
+## More Experiment and Discussion
+
+![image](https://user-images.githubusercontent.com/28617444/128131079-6acc868a-86ad-42b6-8c79-83b63e4576ac.png)
 
 
 ## References

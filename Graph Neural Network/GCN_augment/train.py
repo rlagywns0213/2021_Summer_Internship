@@ -66,14 +66,16 @@ model = GCN(nfeat=features.shape[1],
 optimizer = optim.Adam(model.parameters(),
                        lr=args.lr, weight_decay=args.weight_decay)
 
-n_class = labels.max().item()+1 #0부터 시작하므로
-def data_augment(feat):
+def data_augment(feat,idx):
     '''
     label이 동일한 group끼리 corrupt하는 함수
+    data leakage 문제를 해결해주기 위해 train에만 적용!!
     '''
+    n_class = labels[idx].max().item()+1 #0부터 시작하므로
+
     for num in range(n_class):
         df_feature = pd.DataFrame(feat.numpy())
-        df_feature['label'] = labels
+        df_feature['label'] = labels[idx] #train 에만 적용!!!
         labeld_df = df_feature[df_feature['label'].apply(lambda x: x==num)]
         shuffled_df = labeld_df.sample(frac=1)
         shuffled_df.index = labeld_df.index
@@ -108,14 +110,15 @@ def train(epoch):
     optimizer.zero_grad()
     if args.augmentation == True:
         #augment
-        augment_features = data_augment(features)
+        augment_features = data_augment(features[idx_train],idx_train)
+        features[idx_train] = augment_features #feature train idx만 augment 적용해서 대체!
+        # augment_features2 = data_augment(features[idx_val],idx_val)
+        # features[idx_val] = augment_features2 #feature train idx만 augment 적용해서 대체!
         if epoch ==0:
             print("Augmentation completed!")
-        output = model(augment_features, adj)
-        val_output = model(features, adj) #augmentation 적용하면 validation set에서는 완전히 test set처럼 augment 적용안한걸로 tracking!
+        output = model(features, adj)
     else:
         output = model(features, adj)
-        val_output = output
 
     loss_train = F.nll_loss(output[idx_train], labels[idx_train])
     acc_train = accuracy(output[idx_train], labels[idx_train])
@@ -128,8 +131,8 @@ def train(epoch):
     #     model.eval()
     #     output = model(features, adj)
     model.eval()
-    loss_val = F.nll_loss(val_output[idx_val], labels[idx_val])
-    acc_val = accuracy(val_output[idx_val], labels[idx_val])
+    loss_val = F.nll_loss(output[idx_val], labels[idx_val])
+    acc_val = accuracy(output[idx_val], labels[idx_val])
     val_loss_list.append(loss_val)
 
     print('Epoch: {:04d}'.format(epoch+1),
