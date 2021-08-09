@@ -4,6 +4,22 @@
 
 Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac.kr/))
 
+
+## Research ideas
+
+#### Experiments 1 & 2 on Deep Graph InfoMax
+```
+  Experiments 1. Corrupt function
+  Experiments 2. Visualization by epoch (PCA, T-SNE)
+```
+- [Go to code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI)
+
+#### Data Augmentation Experiments
+
+- [Augmenatation on DGI](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI_augment)
+
+- [Augmentation on GCN](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GCN_augment)
+
 ## Seminar
 
 | Date | Paper | About |
@@ -29,15 +45,6 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 |  :---:|  :---: |
 | 07/11 | [SVD_basic.ipynb](https://github.com/rlagywns0213/2021_Summer_Internship/blob/main/RecSys/SVD_basic.ipynb)
 | 07/11 | [User-based CF.ipynb](https://github.com/rlagywns0213/2021_Summer_Internship/blob/main/RecSys/User-based%20CF.ipynb)
-
----
-
-### Experiments 1 & 2 on Deep Graph InfoMax
-```
-  Experiments 1. Corrupt function
-  Experiments 2. Visualization by epoch (PCA, T-SNE)
-```
-- [Go to code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI)
 
 ---
 
