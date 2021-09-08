@@ -21,8 +21,8 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 - [Augmentation on GCN](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GCN_augment)
 
 ## Seminar
-
-| Date | Paper | About |
+### Basic recommender system and Graph Neural Network
+| Year | Paper | About |
 | :---: | :------------: |  :---: |
 | 07/05| [Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/abs/1609.02907)|[GCN](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GCN)
 | 07/05|[Graph Attention Network](https://arxiv.org/abs/1710.10903) |GAT
@@ -36,7 +36,9 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 | 07/26| [LINE : Large-scale Information Network Embedding](https://arxiv.org/abs/1503.03578)| [LINE](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/RandomWalk/LINE) |
 | 07/26 | [metapath2vec : Scalable Representation Learning for Heterogeneous Networks](https://dl.acm.org/doi/10.1145/3097983.3098036)| Metapath2Vec
 | 07/26 |[Wide & Deep Learning for Recommender Systems](https://arxiv.org/abs/1606.07792)| WD |
-
+| 08/09 |[Deep Graph Infomax](https://arxiv.org/abs/1809.10341)| [DGI](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI) |
+| 08/09 | [Inductive Representation Learning on Large Graphs](https://papers.nips.cc/paper/2017/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)| GraphSAGE |
+| 08/17 | [Translating Embeddings for Modeling Multi-relational Data](https://papers.nips.cc/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html)| [TransE](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/KnowledgeGraph/TransE) |
 
 
 ## Others
