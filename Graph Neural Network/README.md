@@ -8,7 +8,7 @@
 
   - Kipf, Thomas N., and Max Welling. "Semi-supervised classification with graph convolutional networks." arXiv preprint arXiv:1609.02907 (2016).
 
-> GAT
+> [GAT](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GAT)
 
   - Veličković, Petar, et al. "Graph attention networks." arXiv preprint arXiv:1710.10903 (2017).
 
