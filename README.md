@@ -14,12 +14,6 @@ Data Science & Artificial Intelligence Laboratory ([DSAIL](http://dsail.kaist.ac
 ```
 - [Go to code](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI)
 
-#### Data Augmentation Experiments
-
-- [Augmenatation on DGI](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/DGI_augment)
-
-- [Augmentation on GCN](https://github.com/rlagywns0213/2021_Summer_Internship/tree/main/Graph%20Neural%20Network/GCN_augment)
-
 ## Seminar
 ### Basic recommender system and Graph Neural Network
 | Year | Paper | About |
