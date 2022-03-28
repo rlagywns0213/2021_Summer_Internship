@@ -38,8 +38,6 @@ parser.add_argument('--dropout', type=float, default=0.5,
                     help='Dropout rate (1 - keep probability).')
 parser.add_argument('--dataset', required = False, default='cora',
                     help='dataset name')
-parser.add_argument('--augmentation',action='store_true', default=False,
-                    help='for Augmentation')
 
 args = parser.parse_args()
 args.cuda = not args.no_cuda and torch.cuda.is_available()
@@ -67,23 +65,6 @@ optimizer = optim.Adam(model.parameters(),
                        lr=args.lr, weight_decay=args.weight_decay)
 
 n_class = labels.max().item()+1 #0부터 시작하므로
-def data_augment(feat):
-    '''
-    label이 동일한 group끼리 corrupt하는 함수
-    '''
-    for num in range(n_class):
-        df_feature = pd.DataFrame(feat.numpy())
-        df_feature['label'] = labels
-        labeld_df = df_feature[df_feature['label'].apply(lambda x: x==num)]
-        shuffled_df = labeld_df.sample(frac=1)
-        shuffled_df.index = labeld_df.index
-        if num ==0:
-            all_df = shuffled_df
-        else:
-            all_df = pd.concat([all_df, shuffled_df])
-    all_df.sort_index(inplace=True)
-    all_df.drop(columns='label', inplace=True)
-    return torch.tensor(np.array(all_df))
 
 if args.cuda:
     model.cuda()
@@ -97,25 +78,12 @@ if args.cuda:
 loss_list=[]
 val_loss_list=[]
 
-if args.augmentation ==True:
-    sys.stdout = open(f'results/{dataset}/{args.epochs} epoch_{args.hidden} hidden units_log(augmentation).txt', 'w')
-else:
-    sys.stdout = open(f'results/{dataset}/{args.epochs} epoch_{args.hidden} hidden units_log.txt', 'w')
-    
 def train(epoch):
     t = time.time()
     model.train()
     optimizer.zero_grad()
-    if args.augmentation == True:
-        #augment
-        augment_features = data_augment(features)
-        if epoch ==0:
-            print("Augmentation completed!")
-        output = model(augment_features, adj)
-        val_output = model(features, adj) #augmentation 적용하면 validation set에서는 완전히 test set처럼 augment 적용안한걸로 tracking!
-    else:
-        output = model(features, adj)
-        val_output = output
+    output = model(features, adj)
+    val_output = output
 
     loss_train = F.nll_loss(output[idx_train], labels[idx_train])
     acc_train = accuracy(output[idx_train], labels[idx_train])
@@ -158,12 +126,8 @@ def visualize():
     plt.plot(loss_list, linewidth=2.0, color="blue", label="train_BCEloss")
     plt.plot(val_loss_list, linewidth=2.0, color="red", label="val_BCEloss")
     plt.legend()
-    #plt.show()
-    if args.augmentation == True:
-        #augment
-        plt.savefig(f"results/{dataset}/{args.epochs} epoch_{args.hidden} hidden units_loss(augmentation).png")
-    else:
-        plt.savefig(f"results/{dataset}/{args.epochs} epoch_{args.hidden} hidden units_loss.png")
+
+    plt.savefig(f"results/{dataset}/{args.epochs} epoch_{args.hidden} hidden units_loss.png")
 
 # Train model
 t_total = time.time()
