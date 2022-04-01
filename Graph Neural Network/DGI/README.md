@@ -55,46 +55,6 @@ Total time elapsed: 207.5775s
 classification Start
 Accuracy: 0.8231801390647888
 ```
-## Experiments 1. Corrupt function
-
-- I consider alternatvies to corruption function used to produce negative graphs.
-- So I implement two corruption function according to graph's labels.
-- But Paper's Corruption function (row-wise shuffling of all X) is stable to my two corruption function.
-
-![image](https://user-images.githubusercontent.com/28617444/127841819-dc289bcd-2ded-4090-b355-765878cb7681.png)
-
-
-
-## Experiments 2. Visualization by epoch (PCA, T-SNE)
-
-- **My Visualization showed that DGI represents graph input well.**
-
-####  1. PCA
-
-  - Epoch 0
-  <center><img src="results/cora/representations_PCA_0 epoch.png" width="50%" height="50%"></center>
-
-  - Epoch 20
-
-  <center><img src="results/cora/representations_PCA_20 epoch.png" width="50%" height="50%"></center>
-
-  - Epoch 100
-
-  <center><img src="results/cora/representations_PCA_100 epoch.png" width="50%" height="50%"></center>
-
-####  2. T-SNE
-
-  - Epoch 0
-
-  <center><img src="results/cora/representations_TSNE_0 epoch.png" width="50%" height="50%"></center>
-
-  - Epoch 20
-
-  <center><img src="results/cora/representations_TSNE_20 epoch.png" width="50%" height="50%"></center>
-
-  - Epoch 100
-
-  <center><img src="results/cora/representations_TSNE_100 epoch.png" width="50%" height="50%"></center>
 
 ## References
 
